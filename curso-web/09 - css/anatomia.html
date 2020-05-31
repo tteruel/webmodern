@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Anatomia CSS</title>
+    <style>
+        /* ... */
+        .selector {
+            color: #fff;
+            font-size: 30px;
+            text-align: center;
+            /* Multiplos valores */
+            border: solid 5px navy; /* Shorthand property */
+            font-family: Arial, Helvetica, sans-serif, monospace; 
+            /* se a primeira não der certo(não eciste na máquina) ele vai para a proxima*/
+
+            /* Funções */
+            width: calc(100% - 40px);
+            background-color: rgb(34, 153, 189);
+        }
+
+        /* usando uma pseudo-classe */
+        /* essa abaixo será usada quando o mouse do usuário passar por cima do componente */
+        .selector:hover{
+            background-color: orangered;
+        }
+
+        /* Usando pseudo-elemento */
+        .selector::first-letter {
+            font-size: 60px;
+            font-weight: bold;
+        }
+
+        /* padrão de nomenclatura??
+        camelCase ou dash-case?
+        o legal é manter um padrão para organização 
+        ----------------------------------------------
+        Outra informação é que o uso das tags do html não faz diferença o uso do capslock (div ou DIV),
+        Porém para as classes faz a diferença.. no nosso caso selector ou Selector são diferentes*/
+        
+    </style>
+</head>
+
+<body>
+    <div class="selector">Conteúdo</div>
+</body>
+
+</html>

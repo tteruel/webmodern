@@ -1,0 +1,67 @@
+<h1>Tabela</h1>
+
+<table>
+    <caption>Produtos</caption>
+    <thead>
+        <!-- Area do cabeçalho da tabela -->
+        <tr> 
+            <th>Produtos</th>
+            <th>Preço</th>
+            <th>Quantidade</th>
+            <th>Total</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>iPad</td>
+            <td>3289,00</td>
+            <td>5</td>
+            <td>15000</td>
+        </tr>
+
+        <tr>
+            <td>Samsung S9</td>
+            <td>4000</td>
+            <td>3</td>
+            <td>15000</td>
+        </tr>
+        
+    </tbody>
+
+    <tfoot>
+        <tr>
+            <!-- ocupar mais de uma coluna se usa o colspan -->
+            <td colspan="3" rowspan="2">Total</td>
+            <td>30000</td>
+        </tr>
+        <tr>
+            <td>Teste</td>
+        </tr>
+
+    </tfoot>
+
+</table>
+
+<style>
+    table {
+        border-collapse: collapse;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+
+    thead tr {
+        border-bottom: solid 3px #444;
+    }
+
+    tbody tr:hover {
+        background-color: darkred;
+    }
+
+    tfoot {
+        background-color: #111;
+        color: whitesmoke;
+        font-weight: bold;
+    }
+</style>

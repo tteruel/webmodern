@@ -1,0 +1,19 @@
+
+
+Refazer
+--Função--
+lista de exercícios
+
+--Node--
+desafio
+
+--html--
+desafio slider
+desafio controlar vídeo
+
+css
+desafio Menu
+
+
+10- dom
+flappybird

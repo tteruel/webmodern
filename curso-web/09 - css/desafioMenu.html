@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Desafio Menu</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+
+        .cabecalho{
+            background-color: #555;
+            height:95px;
+            width: 100%;
+            top: 0px;
+            left:0px;
+            border-bottom: solid 5px rgb(87, 119, 161);
+            position: fixed;
+            display: inline; 
+        }
+
+        img{
+            height:50px;
+            width: 265px;
+            left: 5px;
+            top: 5px;
+            padding:15px;
+            position: absolute;
+        }
+
+        .menu {
+            text-align: center;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+
+
+        .menu > ul > li, a{
+            display: inline;
+            color: white;
+            padding: 3px;
+            border-radius: 0px;
+            text-decoration: none;
+            initial-letter: 20px;
+            position: relative;
+        }
+        a:hover{
+            background-color: rgb(87, 119, 161);
+        }
+
+        a:active{
+            background-color: rgb(87, 119, 161);
+
+        }
+
+        @media (max-width: 818px) {
+            .menu {display: none;}
+            .autenticacao {display: none;}
+        }
+
+        @media (min-width: 819px){
+            .menu-toggle {display: none;}
+        }
+        
+         .autenticacao{
+            text-align: right;
+            position: relative;
+            bottom: 40%;
+            right: 5%;
+        }
+
+        .botao{
+            border-radius: 85%;
+            background-color: lightcoral;
+            size: 25px;
+        }
+
+
+        
+
+    </style>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="logo">
+            <a href="#inicio">
+                <img src="http://files.cod3r.com.br/curso-web/logo.png" alt="Logo" />
+            </a>
+        </div>
+        <button class="menu-toggle">
+            <i class="fa fa-lg fa-bars"></i>
+        </button>
+        <nav class="menu">
+            <ul>
+                <li>
+                    <a href="#inicio">Início</a>
+                </li>
+                <li>
+                    <a href="#cursos">Cursos</a>
+                </li>
+                <li>
+                    <a href="#sobre">Sobre</a>
+                </li>
+                <li>
+                    <a href="#contato">Contato</a>
+                </li>
+            </ul>
+        </nav>
+        <aside class="autenticacao">
+            <a href="#login">Login</a>
+            <a href="#registar" class="botao destaque">Registrar</a>
+        </aside>
+    </header>
+
+    <script>
+        // ...
+    </script>
+</body>
+
+</html>

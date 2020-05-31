@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Origem CSS: Externo, Interno e Inline</title>
+    <style>
+        /* ... */
+        body {
+            background-color: aquamarine;
+        }
+    </style>
+    <!-- colocar o link externo do css no head, mas se colocar no body ele tbm funciona -->
+    <link rel="stylesheet" href="css/externo.css">
+    <!-- A Prioridade é pela ordem de processamento, sempre o último a ser processado -->
+</head>
+<!-- tentar colocar o css sempre dentro dos arquivos -->
+<body style="background-color: coral;">
+    <!-- Não é recomendado a utilizar o inline para aplicar estilos -->
+    <h1>E agora?</h1>
+</body>
+
+</html>
